@@ -794,7 +794,7 @@ else ifeq ($(TARGET_DEVICE), p930)
     BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
 
 #LG G2 AT&T (d800) - G2 TMO (d801) - G2 Int (d802) - G2 CAN (d803) - d805 - d806 - G2 Verizon (vs980) - G2 Sprint (ls980)
-else ifneq ($(filter $(TARGET_DEVICE),d800 d801 d802 d803 d805 d806 vs980 ls980),)
+else ifneq ($(filter $(TARGET_DEVICE),d800 d801 d802 d803 d805 d806 f320 lgl22 ls980 vs980),)
     TARGET_COMMON_NAME := LG G2 ($(TARGET_DEVICE))
     KERNEL_EXFAT_MODULE_NAME := "exfat"
     TARGET_SCREEN_HEIGHT := 1920
@@ -802,7 +802,7 @@ else ifneq ($(filter $(TARGET_DEVICE),d800 d801 d802 d803 d805 d806 vs980 ls980)
     BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
 
 #LG G3 International (d855)
-else ifeq ($(TARGET_DEVICE), d855)
+else ifneq ($(filter $(TARGET_DEVICE),d850 d851 d852 d855 f400 lgl24 ls990 us990 vs985),)
     TARGET_COMMON_NAME := LG G3 ($(TARGET_DEVICE))
     KERNEL_EXFAT_MODULE_NAME := "exfat"
     TARGET_SCREEN_HEIGHT := 2560
