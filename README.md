@@ -16,7 +16,7 @@ Check that this patch is in your `build` directory:
 
 Clone recovery to bootable/recovery-philz folder:
 
-    git clone https://github.com/sudosurootdev/bootable/recovery-philz bootable/recovery-philz -b L5
+    git clone https://github.com/sudosurootdev/bootable/recovery-philz bootable/recovery-philz -b L51
 
 ...or add it to your build manifest:
 
